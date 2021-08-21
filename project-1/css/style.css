@@ -1,0 +1,26 @@
+* {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+*#text-blue {
+    color: #c8ff00;
+}
+
+.pai-div > h2, .pai-div > p, .irmao-div + p{
+    color: orange;
+}
+
+a[href*="picpay"] {
+    color: green;
+    font-size: 10px;
+}
+
+a[title][href="http://www.picpay.com"] {
+    text-decoration: none;
+    color: red;
+}
+
+a[href$=".org"]:hover{
+    text-transform: uppercase;
+}

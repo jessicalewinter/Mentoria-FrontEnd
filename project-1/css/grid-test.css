@@ -1,0 +1,28 @@
+.wrapper {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-rows: [row-start row-1-start] 1fr [row-1-end row-2-start] 1fr [row-2-end row-end];
+    grid-template-columns: [col-start] 1fr [col-2-start] 1fr [col-2-end col-3-start] 1fr [col-end];
+}
+
+.common {
+    margin: 10px;
+    background-color: cyan;
+}
+
+.two {
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+
+    /* grid-row:    2 / span 3;
+    grid-column: span 2;    */
+}
+
+.four {
+    /* grid-row: row-2-start / row-2-end;
+    grid-column: col-2-start / col-2-end; */
+    /* grid-area: 2 / 2 / 3 / 3; */
+    grid-area: row-2-start / col-2-start / row-2-end / col-2-end;
+}
